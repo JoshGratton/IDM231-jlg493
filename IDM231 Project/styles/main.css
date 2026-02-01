@@ -5,7 +5,7 @@ body {
     background: white;
 }
 
-/* Centered text block */
+/* styling for all the text and stuff */
 .center-text {
     text-align: center;
     margin-top: 80px;
@@ -27,7 +27,7 @@ body {
     margin: 0;
 }
 
-/* Image rows container */
+/* the containers with like the rows */
 .image-grid {
     width: 100%;
     display: flex;
@@ -35,24 +35,24 @@ body {
     gap: 40px;
 }
 
-/* Generic row styling */
+/* this should style the rows */
 .row {
     display: flex;
     align-items: center;
 }
 
-/* First row: two images on opposite sides */
+/* this is for the top row with the two images on each side */
 .row-two-images {
     justify-content: space-between;
     padding: 0 40px;
 }
 
-/* Rows with five images */
+/* this is the 2nd and 3rd row styling */
 .row-five-images {
     justify-content: space-evenly;
 }
 
-/* Image styling */
+/* this is for what the images look like */
 .row img {
     width: 150px;
     height: 150px;
