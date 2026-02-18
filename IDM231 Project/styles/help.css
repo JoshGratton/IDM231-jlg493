@@ -1,0 +1,57 @@
+/* Base Styles */
+body {
+    background-color: #fdf0f2; /* Soft pink background */
+    color: #4a4a4a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.help-container {
+    background: white;
+    padding: 40px;
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+}
+
+/* Typography */
+h1 {
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    margin-bottom: 30px;
+}
+
+.help-step {
+    text-align: left;
+    margin-bottom: 25px;
+    padding-left: 15px;
+}
+
+.help-step h2 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+/* Accents */
+.note {
+    background: #fff5f7;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+
+.back-button {
+    margin-top: 30px;
+    padding: 12px 25px;
+    background-color: #ff8fa3;
+    color: white;
+}
+
+.back-button:hover {
+    background-color: #ff758f;
+}

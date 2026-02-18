@@ -5,7 +5,7 @@ body {
     background: white;
 }
 
-/* styling for all the text and stuff */
+/* styling for text */
 .center-text {
     text-align: center;
     margin-top: 80px;
@@ -27,21 +27,21 @@ body {
     margin: 0;
 }
 
-/* the date selector and the zodiac info */
+/* Date selector (watch a video how to do this)*/
 .center-text {
     display: flex;
-    flex-direction: column; /* Stacks children vertically */
-    align-items: center;    /* Centers items horizontally */
+    flex-direction: column; 
+    align-items: center;   
     text-align: center;
-    margin-top: 50px;       /* Adds some breathing room at the top */
+    margin-top: 50px;      
 }
 
 #birthday {
     padding: 10px;
     font-size: 1.1rem;
-    border: 2px solid #ffc0cb; /* Optional: Crumbl pink border! */
+    border: 2px solid #ffc0cb; 
     border-radius: 8px;
-    margin: 15px 0;         /* Adds space above and below the input */
+    margin: 15px 0;        
     cursor: pointer;
 }
 
@@ -49,20 +49,20 @@ body {
     font-weight: bold;
     font-size: 1.5rem;
     margin-bottom: 10px;
-    min-height: 1.6em;      /* Prevents layout jump when text appears */
+    min-height: 1.6em;     
 }
 
-/*so images are clickable */
+/* Image animations and clickable */
 .image-grid img {
     cursor: pointer;
-    transition: transform 0.2s; /* Makes a smooth hover effect */
+    transition: transform 0.2s; 
 }
 
 .image-grid img:hover {
-    transform: scale(1.1); /* Slightly grows the cookie when hovered */
+    transform: scale(1.1); 
 }
 
-/* the containers with the rows */
+/* images */
 .image-grid {
     width: 100%;
     display: flex;
@@ -70,24 +70,24 @@ body {
     gap: 40px;
 }
 
-/* style the rows here */
+/* Row styling */
 .row {
     display: flex;
     align-items: center;
 }
 
-/* this is for the top row with the two images on each side */
+/* top row */
 .row-two-images {
     justify-content: space-between;
     padding: 0 40px;
 }
 
-/* this is the 2nd and 3rd row styling */
+/* 2nd and 3rd row */
 .row-five-images {
     justify-content: space-evenly;
 }
 
-/* this is for what the images look like */
+/* image dimensions */
 .row img {
     width: 150px;
     height: 150px;

@@ -1,5 +1,5 @@
 /**
- * Given a month and day, determine the corresponding Zodiac sign.
+ * zodiac signs 
  */
 function getZodiac(month, day) {
   if ((month === 12 && day >= 22) || (month === 1 && day <= 19)) return 'Capricorn';
@@ -17,7 +17,7 @@ function getZodiac(month, day) {
   return null;
 }
 
-// Data for all signs
+// Data for the signs
 const signsData = [
   { name: 'Aries', image: 'blueberry.png', sound: 'bubblepop.mp3', color: '#e74c3c' },
   { name: 'Taurus', image: 'browniebatter.png', sound: 'comedicdrum.mp3', color: '#795548' },
@@ -33,28 +33,28 @@ const signsData = [
   { name: 'Pisces', image: 'wonkacookie.png', sound: 'ukulele.mp3', color: '#8e44ad' }
 ];
 
-// Main function to update the site appearance
+// Upddate the site appearance
 function updatePage(sign) {
   if (!sign) return;
 
-  // Change Background Color
+  // Change the Background Color
   document.body.style.backgroundColor = sign.color;
 
-  // Update Text
+  // Update the Text
   const infoDisplay = document.getElementById('zodiac-info');
   infoDisplay.innerHTML = `<h2>You are a ${sign.name}!</h2>`;
 
-  // Play Sound
+  // Play Sounds
   const audio = new Audio(`sounds/${sign.sound}`);
   audio.play().catch(err => console.log("Click the page first to enable audio."));
 }
 
-// Wait for the HTML to be fully ready
+// Make sure html is ready (use ai for this one cause idk rn)
 document.addEventListener('DOMContentLoaded', () => {
   const dateInput = document.getElementById('birthday');
   const cookieImages = document.querySelectorAll('.image-grid img');
 
-  // TRIGGER 1: When the date is changed
+  // date is selected
   dateInput.addEventListener('change', function() {
     const selectedDate = new Date(this.value);
     const month = selectedDate.getUTCMonth() + 1; 
@@ -66,13 +66,13 @@ document.addEventListener('DOMContentLoaded', () => {
     updatePage(sign);
   });
 
-  // TRIGGER 2: When a cookie image is clicked
+  // cookie is clicked
   cookieImages.forEach(img => {
     img.addEventListener('click', function() {
-      // Get filename (e.g., 'oreocookie.png') from the full URL
+
       const filename = this.src.split('/').pop();
       
-      // Find the sign associated with that image
+    
       const sign = signsData.find(item => item.image === filename);
       
       updatePage(sign);
