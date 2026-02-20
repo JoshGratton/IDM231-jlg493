@@ -21,7 +21,7 @@ function getZodiac(month, day) {
   return null;
 }
 
-// Data for the signs
+
 const signsData = [
   { name: 'Aries', image: 'blueberry.png', sound: 'bubblepop.mp3', color: '#e74c3c' },
   { name: 'Taurus', image: 'browniebatter.png', sound: 'comedicdrum.mp3', color: '#795548' },
@@ -37,18 +37,15 @@ const signsData = [
   { name: 'Pisces', image: 'wonkacookie.png', sound: 'ukulele.mp3', color: '#8e44ad' }
 ];
 
-// Upddate the site appearance
+
 function updatePage(sign) {
   if (!sign) return;
 
-  // Change the Background Color
   document.body.style.backgroundColor = sign.color;
 
-  // Update the Text
-  const infoDisplay = document.getElementById('zodiac-info');
+  const infoDisplay = document.getElementById('zodiac-stuff');
   infoDisplay.innerHTML = `<h2>You are a ${sign.name}!</h2>`;
 
-  // Play Sounds
   const audio = new Audio(`sounds/${sign.sound}`);
   audio.play().catch(err => console.log("Click the page first to enable audio."));
 }
@@ -56,9 +53,8 @@ function updatePage(sign) {
 // Make sure html is ready (use ai for this one cause idk rn)
 document.addEventListener('DOMContentLoaded', () => {
   const dateInput = document.getElementById('birthday');
-  const cookieImages = document.querySelectorAll('.image-grid img');
+  const cookieImages = document.querySelectorAll('.images img');
 
-  // date is selected
   dateInput.addEventListener('change', function() {
     const selectedDate = new Date(this.value);
     const month = selectedDate.getUTCMonth() + 1; 

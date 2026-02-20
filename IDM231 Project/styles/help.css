@@ -1,7 +1,6 @@
-/* Base Styles */
+/*base stuff */
 body {
-    background-color: #fdf0f2; /* Soft pink background */
-    color: #4a4a4a;
+    background-color: #fdf0f2; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,7 +8,7 @@ body {
     margin: 0;
 }
 
-.help-container {
+.helpstuff {
     background: white;
     padding: 40px;
     max-width: 600px;
@@ -17,7 +16,7 @@ body {
     text-align: center;
 }
 
-/* Typography */
+
 h1 {
     margin-bottom: 10px;
 }
@@ -26,32 +25,26 @@ h1 {
     margin-bottom: 30px;
 }
 
-.help-step {
+.helpstep {
     text-align: left;
     margin-bottom: 25px;
     padding-left: 15px;
 }
 
-.help-step h2 {
+.helpstep h2 {
     font-size: 1.2rem;
     margin-bottom: 5px;
 }
 
-/* Accents */
-.note {
-    background: #fff5f7;
-    padding: 15px;
-    margin-top: 30px;
-    font-size: 0.9rem;
-}
 
-.back-button {
+
+.backbutton {
     margin-top: 30px;
     padding: 12px 25px;
     background-color: #ff8fa3;
     color: white;
 }
 
-.back-button:hover {
+.backbutton:hover {
     background-color: #ff758f;
 }
