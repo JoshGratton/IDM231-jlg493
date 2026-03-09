@@ -1,4 +1,4 @@
-/*base stuff */
+
 body {
     background-color: #fdf0f2; 
     display: flex;
@@ -45,6 +45,3 @@ h1 {
     color: white;
 }
 
-.backbutton:hover {
-    background-color: #ff758f;
-}
