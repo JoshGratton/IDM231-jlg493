@@ -45,7 +45,7 @@ function updatePage(sign) {
   document.body.style.backgroundColor = sign.color;
 
   
-  const infoDisplay = document.getElementById('zodiac-info');
+  const infoDisplay = document.getElementById('zodiacstuff');
   infoDisplay.innerHTML = `<h2>You are a ${sign.name}!</h2>`;
 
   
